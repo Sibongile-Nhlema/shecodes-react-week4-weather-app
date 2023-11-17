@@ -19,7 +19,7 @@ function CurrentWeather() {
     if (unit === "C") {
       return temp;
     } else if (unit === "F") {
-      return ((temp + 32) * 5) / 9;
+      return ((temp - 32) * 5) / 9;
     } else {
       return temp;
     }

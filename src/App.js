@@ -16,10 +16,11 @@ function App() {
       </div>
       <div className="p-3">
         <p>
-          <a href="https://github.com/matthieua/sup" target="_blank">
+          <a href="https://github.com/Sibongile-Nhlema/shecodes-react-week4-weather-app" target="_blank">
             Open-source code
           </a>
-          , by Sibongile Nthlema 😊
+          , by Sibongile Nthlema 😊, hosted on 
+          <a href="" target="_blank">Netlify</a>
         </p>
       </div>
     </div>
