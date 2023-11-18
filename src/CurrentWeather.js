@@ -4,7 +4,7 @@ import axios from "axios";
 function CurrentWeather() {
   let [cityTime, setCityTime] = useState("Saturday 17:00");
   let [city, setCity] = useState("Cairo");
-  let [day, setDay] = useState("Wednesday");
+  //let [day, setDay] = useState("Wednesday");
   let [icon, setIcon] = useState(
     "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
   );
