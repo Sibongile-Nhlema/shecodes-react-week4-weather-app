@@ -20,7 +20,7 @@ function App() {
             Open-source code
           </a>
           , by Sibongile Nthlema 😊, hosted on 
-          <a href="" target="_blank">Netlify</a>
+          <a href="./" target="_blank">Netlify</a>
         </p>
       </div>
     </div>

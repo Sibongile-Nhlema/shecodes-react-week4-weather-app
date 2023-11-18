@@ -74,12 +74,12 @@ function CurrentWeather() {
               <div className="float-left icon-div">
                 <span className="temperature">{Math.round(temp)}</span>
                 <span className="units">
-                  <a href="#" className="celsius" onClick={() => setUnit("C")}>
+                  <a href="./" className="celsius" onClick={() => setUnit("C")}>
                     °C{" "}
                   </a>{" "}
                   |
                   <a
-                    href="#"
+                    href="./"
                     className="fahrenheit"
                     onClick={() => setUnit("F")}
                   >
