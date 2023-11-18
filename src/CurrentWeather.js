@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 function CurrentWeather() {
-  let [cityTime, setCityTime] = useState("Saturday 17:00");
+  //let [cityTime, setCityTime] = useState("Saturday 17:00");
   let [city, setCity] = useState("Cairo");
   //let [day, setDay] = useState("Wednesday");
   let [icon, setIcon] = useState(
@@ -27,6 +27,7 @@ function CurrentWeather() {
 
   useEffect(() => {
     function handleCityChange(response) {
+      setCity(city);
       setTemp(convertTemperature(response.data.main.temp, unit));
       setIcon(response.data.weather[0].icon);
       setDescription(response.data.weather[0].description);
@@ -41,9 +42,9 @@ function CurrentWeather() {
     axios.get(url).then(handleCityChange);
   }, [city, unit]);
 
-  function handleCityInput(event) {
-    setCity(event.target.value);
-  }
+  //function handleCityInput(event) {
+    //setCity(event.target.value);
+  //}
 
   if (city) {
     return (
@@ -53,7 +54,7 @@ function CurrentWeather() {
             <h1 id="city-display">{city}</h1>
             <ul className="list">
               <li id="displayDateTime">
-                <span id="city-time">{cityTime}</span>
+                <span id="city-time">"Saturday 17:00"</span>
               </li>
               <li id="conditions">{description}</li>
             </ul>
